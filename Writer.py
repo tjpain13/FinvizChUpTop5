@@ -1,5 +1,5 @@
-# Go through files in /Volumes/Tristan_Mac/StockEOD/ChannelUP/ add the ohlccv data if file is less than
-# 20 days old, or move to /Volumes/.../ChannelUP/Old if file is 21 or more days old
+# Go through files in /Your/Path/Here/ add the ohlccv data if file is less than
+# 21 days old, or move to /Your/Path/Here/.Old if file is 21 or more days old
 
 import linecache
 import os
