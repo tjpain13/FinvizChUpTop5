@@ -3,7 +3,7 @@
 
 Purpose:
 
-This searches for the top 5 entries in Finviz's "Channel Up" category and then appends the current day's open, high, low, close, adjusted close, and volume data (ohlccv) for each entry to a file in a location of your choice, as well as for any others in that location that are less than 20 days old. Files older than 20 days are moved to a directory named ".Old" (note the "."), which is also created if it doesn't exist.
+This searches for the top 5 entries in Finviz's "Channel Up" category and then appends the current day's open, high, low, close, adjusted close, and volume data (ohlccv) for each entry to a file in a location of your choice, as well as for any others in that location that are less than 21 days old. Files older than 20 days are moved to a directory named ".Old" (note the "."), which is also created if it doesn't exist.
 
 Before Use:
 
