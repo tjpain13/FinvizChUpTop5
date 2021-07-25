@@ -24,7 +24,7 @@ for t in tags:
 # date of addition to the first two lines, respectively, upon creation
 
 curdt = datetime.date.today()
-path = "Your/Path/Here"  # add your desired path here, INCLUDE trailing "/" or "\"
+path = "/Your/Path/Here/"  # add your desired path here, INCLUDE trailing "/" or "\"
 
 for o in top5:
     if not os.path.exists(f'{path}{o}.json'):
