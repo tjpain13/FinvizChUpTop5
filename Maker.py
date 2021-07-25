@@ -20,7 +20,7 @@ top5 = []
 for t in tags:
     top5.append(t.text)
 
-# check if save file exists for ticker data - if not, creates a .json file and adds ticker name and
+# check if save file exists for ticker data - if not, create a .json file and adds ticker name and
 # date of addition to the first two lines, respectively, upon creation
 
 curdt = datetime.date.today()
