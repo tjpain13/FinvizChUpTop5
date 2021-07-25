@@ -10,7 +10,7 @@ from shutil import move
 
 
 curdt = datetime.date.today()
-path = "/Volumes/Tristan_Mac/StockEOD/ChannelUP/"  # add your desired path here, INCLUDE trailing "/" or "\"
+path = "/Your/Path/Here/"  # add your desired path here, INCLUDE trailing "/" or "\"
 
 for d in os.listdir(f'{path}'):
     if not d.startswith('.'):
