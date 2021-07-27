@@ -18,8 +18,7 @@ for d in os.listdir(f'{path}'):
         oldday = datetime.datetime.strptime(secondline, "%Y-%m-%d").date()
         dayselapsed = curdt - oldday
         if dayselapsed < datetime.timedelta(days=21):
-            url = f'https://finance.yahoo.com/quote/{PurePath(d).stem}/history?period1=1626912000&period2=1626998400' \
-                  f'&interval=1d&filter=history&frequency=1d&includeAdjustedClose=true '
+            url = f'https://finance.yahoo.com/quote/{PurePath(d).stem}/history?p={PurePath(d).stem}'
             stockfile = open(f'{path}{d}', 'a')
             stockfile.write(f'\n{ohlccv_output(url)}')
             stockfile.close()
