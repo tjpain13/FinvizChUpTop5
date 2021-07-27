@@ -11,7 +11,7 @@ def ohlccv_output(url):
     response = urllib.request.urlopen(request)
     html = response.read()
     soup = BeautifulSoup(html, "html.parser")
-    ohlcvraw = soup.find_all("td", "Py(10px)")
+    ohlcvraw = soup.find_all("td", "Py(10px)", limit=7)
     ohlcv = []
     for o in ohlcvraw:
         ohlcv.append(o.text)
