@@ -8,7 +8,7 @@ This searches for the top 5 entries in Finviz's "Channel Up" category and then a
 Before Use:
 
 YOU WILL NEED TO define the path variable in Maker.py and Writer.py to signify where you want the program to save files (and the .Old directory). These must be the same location, and it shouldn't be used for anything else. Make sure to include leading and trailing "/" or "{backslash}" as necessary. This code has been tested on MacOS with "/", but if the rest of the code works on other OS's (may or may not be true), I think the file path should work with "{backslash}" as well.
-For example, say the path variable is set to "/My/File/Path/" and the ticker is AAPL (unlikely). The program would create and save data to "/My/File/Path/AAPL.json".
+For example, say the path variable is set to "/My/File/Path/" and the ticker is AAPL (unlikely). The program would create and save data to "/My/File/Path/AAPL.csv".
 
 Use:
 
