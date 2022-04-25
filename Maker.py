@@ -1,3 +1,7 @@
+# Isolates tickers for top 5 stocks in FinViz's "Channel UP" category
+# Creates a .csv save file for each ticker at the location set in line 31, if one does not already exist
+# Formats save files as necessary
+
 import urllib.request
 from bs4 import BeautifulSoup
 import os
@@ -20,14 +24,14 @@ top5 = []
 for t in tags:
     top5.append(t.text)
 
-# check if save file exists for ticker data - if not, create a .json file and adds ticker name and
+# check if save file exists for ticker data - if not, creates a .csv file and adds ticker name and
 # date of addition to the first two lines, respectively, upon creation
 
 curdt = datetime.date.today()
-path = "/Your/Path/Here/"  # add your desired path here, INCLUDE trailing "/" or "\"
+path = ""  # add your desired path inside the quotes, INCLUDE trailing "/" or "\"
 
 for o in top5:
-    if not os.path.exists(f'{path}{o}.json'):
-        f = open(f'{path}{o}.json', 'a')
+    if not os.path.exists(f'{path}{o}.csv'):
+        f = open(f'{path}{o}.csv', 'a')
         f.write(f'{o}\n{curdt}')
         f.close()
